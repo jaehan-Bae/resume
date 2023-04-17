@@ -16,9 +16,15 @@
   font-style: normal;
 }
 
+/* Web Fonts - Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
 /* ======= Reset.css ======= */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 a {
   text-decoration: none;
@@ -34,6 +40,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* ======= Default.css ======= */
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Pretendard-Regular', sans-serif;
   font-size: 18px;
@@ -42,6 +51,16 @@ body {
   background-color: #fff;
   color: #222;
 }
+.eng {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Common Css */
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #444;
+}
 
 /* ======= Style.css ======= */
 .container {}
@@ -49,17 +68,27 @@ header {
   position: fixed;
   width: 100%;
 }
+header.active {
+  background-color: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.117);
+  z-index: 100;
+}
 .header-inner {
   width: 1500px;
   margin: auto;
-  height: 90px;
 }
 .gnb {
   overflow: hidden;
   margin-top: 30px;
+  height: 60px;
 }
 .logo {
   float: left;
+}
+.logo img {
+  width: 160px;
+  height: 30px;
+  
 }
 .header-inner h3 {
   font-size: 15px;
@@ -70,6 +99,7 @@ nav {
 nav a {
   margin-right: 30px;
   font-weight: bold;
+  padding-top: 180px;
 }
 
 /* ########## Section: welcome ########### */
@@ -99,34 +129,340 @@ nav a {
 .welcome-head span {
   display: block;
   font-size: 100px;
-  color: #186090;
+  color: #214777;
   margin-bottom: -90px;
 }
 
 /* ########## Section: About ########### */
 .about {
   height: 100vh;
-  background-color: #e3e3df;
+  width: 100%;
+  position: relative;
 }
-.about-inner {}
+/* .about-num {
+  position: relative;
+} */
+.about::before{
+  content: '01';
+  position: absolute;
+  font-size: 250px;
+  top: 230px;
+  left: -20px;
+  font-weight: bold;
+  color: #EEEEEE;
+  line-height: 0 !important;
+}
+.about-inner {
+  width: 1500px;
+  height: inherit;
+  margin: auto;
+  position: relative;
+  z-index: 10;
+  /* background-color: red; */
+}
+.about-contents {
+  overflow: hidden;
+}
+.about-left {
+  float: left;
+  width: 45%;
+  margin-top: 250px;
+}
+.about-right {
+  float: right;
+  width: 40%;
+  vertical-align: middle;
+  line-height: 1.7em;
+  background-color: rgb(230, 239, 243);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.117);
+  padding: 50px;
+  margin-top: 180px;
+  margin-right: 150px;
+}
+.about-headline {
+  position: absolute;
+  z-index: 5;
+}
+.about-headline h1 {
+  padding-top: 20px;
+  color: #214777;
+  font-size: 100px;
+  font-weight: bold;
+}
+.about-headline span {
+  display: block;
+  margin-top: -45px;
+}
+.about-img {
+  width: 300px;
+  position: absolute;
+  left: 250px;
+  margin-top: -60px;
+}
+.about-img img {
+  width: inherit;
+  opacity: .9;
+}
+.about-introduce {
+  margin-top: 50px;
+  color: #555;
+  width: 530px;
+}
+.about-background {
+  display: flex;
+}
+.about-th {
+  font-weight: bold;
+  margin-left: 40px;
+}
+.about-td {
+  margin-left: 30px;
+}
 
 /* ########## Section: Skill ########### */
 .skill {
   height: 100vh;
-  background-color: rgb(230, 239, 243);
+  /* background-color: rgb(230, 239, 243); */
+  position: relative;
+  border: 1px solid #000;
 }
-.skill-inner {}
+.skill::before{
+  content: '02';
+  position: absolute;
+  font-size: 250px;
+  top: 230px;
+  left: -20px;
+  font-weight: bold;
+  color: #EEEEEE;
+  line-height: 0 !important;
+}
+.skill-inner {
+  width: 1500px;
+  margin: auto;
+  z-index: 10px;
+}
+.skill-inner h3 {
+  position: absolute;
+  top: 260px;
+}
+.skill-head img {
+  width: 60px;
+}
+.skill-contents {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 300px;
+  margin-top: 180px;
+}
+.skill-left > h1 {
+  font-weight: bold;
+}
+.skill-right > h1 {
+  font-weight: bold;
+}
+.skill-con {
+  overflow: hidden;
+  margin-top: 30px;
+}
+.skill-con > div {
+  float: left;
+}
+.skill-head {
+  margin-right: 25px;
+}
+.skill-bottom {
+  width: 60%;
+}
+
 
 /* ########## Section: Portfolio ########### */
 .portfolio {
   height: 100vh;
-  background-color: rgb(252, 229, 246);
+  position: relative;
+  border: 1px solid #000;
 }
-.portfolio-inner {}
+.portfolio::before{
+  content: '03';
+  position: absolute;
+  font-size: 250px;
+  top: 230px;
+  left: -20px;
+  font-weight: bold;
+  color: #EEEEEE;
+  line-height: 0 !important;
+}
+.portfolio-inner {
+  width: 1500px;
+  margin: auto;
+  height: inherit;
+}
+.portfolio-inner h3 {
+  position: absolute;
+  top: 260px;
+}
+.portfolio-contents {
+  overflow: hidden;
+}
+.portfolio-list {
+  /* text-align: center; */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.portfolio-item {
+  cursor: pointer;
+  /* margin-right: 30px; */
+}
+.portfolio-item::after {
+  content: '|';
+  padding: 15px;
+  color: #999;
+  height: 8px;
+}
+.portfolio-item:last-child:after {
+  content: '';
+}
+.portfolio-left {
+  float: left;
+  width: 20%;
+  margin-top: 400px;
+}
+.portfolio-right {
+  float: right;
+  width: 70%;
+  margin-top: 180px;
+}
+.portfolio-right img {
+  width: 80%;
+}
+.portfolio-mockup {
+  width: 900px;
+  text-align: center;
+}
+.portfolio-title {}
+.portfolio-title > h2 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.portfolio-title p {
+}
+.portfolio-btns {
+  margin-top: 30px;
+}
+.portfolio-btns a:hover {
+  background: #214777;
+  color: #fff;
+}
+.portfolio-btns a {
+  border: 1px solid #214777;
+  padding: 8px 20px;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  color: #214777;
+  transition: .5s;
+}
 
 /* ########## Section: Contact ########### */
 .contact {
-  height: 100vh;
-  background-color: rgb(243, 252, 229);
+  height: 90vh;
+  /* background-color: rgb(243, 252, 229); */
+  border: 1px solid #000;
+  position: relative;
 }
-.contact-inner {}
+.contact::before{
+  content: '04';
+  position: absolute;
+  font-size: 250px;
+  top: 230px;
+  left: -20px;
+  font-weight: bold;
+  color: #EEEEEE;
+  line-height: 0 !important;
+}
+.contact-inner h3 {
+  position: absolute;
+  top: 260px;
+}
+.contact-img {
+  margin-top: 400px;
+}
+.contact-inner {
+  width: 1500px;
+  margin: auto;
+  height: inherit;
+  z-index: 10;
+}
+.contact-inner h3 {
+  position: absolute;
+  top: 260px;
+}
+.contact-contents > div {
+  margin-top: 360px;
+  float: left;
+  width: 50%;
+}
+.contact-img {
+}
+.contact-desc {
+  width: 500px;
+  text-align: center;
+}
+.contact-title {
+}
+.contact-title img {
+  width: 50px;
+  margin-top: 60px;
+}
+.contact-title > h2 {
+  margin-top: 20px;
+}
+.contact-title span {
+  font-size: 20px;
+}
+.contact-btns {
+  margin-top: 40px;
+}
+.contact-btns a {
+  margin-right: 15px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #214777;
+  color: #fff;
+  transition: .5s;
+}
+.contact-btns a:hover {
+  background-color: #fff;
+  border: 1px solid #214777;
+  color: #214777;
+}
+
+/* ########## Section: footer ########### */
+footer {
+  height: 10vh;
+  background-color: #214777;
+  text-align: center;
+}
+.footer-content {
+  color: #fff;
+  font-size: 12px;
+  padding-top: 13px;
+}
+
+/* ########## Section: Qick menu ########### */
+.goto-top {
+  position: absolute;
+  right: 20px;
+  top: 300px;
+  z-index: 9999;
+  width: 120px;
+  height: 200px;
+  border-radius: 5px;
+  background-color: #214777;
+}
+.goto-top-inner {
+  padding: 22px 25px;
+}
+.goto-top-inner a {
+  color: #fff;
+}
