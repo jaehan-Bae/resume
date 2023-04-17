@@ -1,0 +1,132 @@
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Web Fonts - Source Sans Pro */
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap'); */
+/* font-family: 'Source Sans Pro', sans-serif; */
+
+/* Web Fonts - NoonNoo */
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ======= Reset.css ======= */
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+button, input {
+  outline: none;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+  font-weight: normal;
+  line-height: 1.5em;
+}
+
+/* ======= Default.css ======= */
+body {
+  font-family: 'Pretendard-Regular', sans-serif;
+  font-size: 18px;
+  line-height: 1.7em;
+  margin: 0;
+  background-color: #fff;
+  color: #222;
+}
+
+/* ======= Style.css ======= */
+.container {}
+header {
+  position: fixed;
+  width: 100%;
+}
+.header-inner {
+  width: 1500px;
+  margin: auto;
+  height: 90px;
+}
+.gnb {
+  overflow: hidden;
+  margin-top: 30px;
+}
+.logo {
+  float: left;
+}
+.header-inner h3 {
+  font-size: 15px;
+}
+nav {
+  float: right;
+}
+nav a {
+  margin-right: 30px;
+  font-weight: bold;
+}
+
+/* ########## Section: welcome ########### */
+.welcome {}
+.welcome-inner {
+  width: 1200px;
+  margin: auto;
+}
+.welcome-img {
+  width: 100%;
+  height: 100vh;
+}
+.welcome-img img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.welcome-head {
+  position: absolute;
+  top: 400px;
+  text-transform: uppercase;
+}
+.welcome-head h2 {
+  font-size: 150px;
+  font-weight: 900;
+}
+.welcome-head span {
+  display: block;
+  font-size: 100px;
+  color: #186090;
+  margin-bottom: -90px;
+}
+
+/* ########## Section: About ########### */
+.about {
+  height: 100vh;
+  background-color: #e3e3df;
+}
+.about-inner {}
+
+/* ########## Section: Skill ########### */
+.skill {
+  height: 100vh;
+  background-color: rgb(230, 239, 243);
+}
+.skill-inner {}
+
+/* ########## Section: Portfolio ########### */
+.portfolio {
+  height: 100vh;
+  background-color: rgb(252, 229, 246);
+}
+.portfolio-inner {}
+
+/* ########## Section: Contact ########### */
+.contact {
+  height: 100vh;
+  background-color: rgb(243, 252, 229);
+}
+.contact-inner {}
