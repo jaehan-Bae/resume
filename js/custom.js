@@ -10,7 +10,7 @@ $(window).scroll(function(){
 
 /* Header Scroll Change */
 $(window).scroll(
-  function () {
+  function() {
     var windowTop = $(window).scrollTop() + 300;
       $(".goto-top").stop().animate({ top: windowTop + "px" }, 500);
     }
