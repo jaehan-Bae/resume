@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Style.css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>자바스크립트 별점주기</title>
+  <style>
+    /* Style.css */
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    a {
+      text-decoration: none;
+      color: #222;
+    }
+    .star-rating {
+      background-color: #333;
+      width: 330px;
+      text-align: center;
+      border-radius: 5px;
+      padding: 5px;
+    }
+    .star-rating div {
+      float: left;
+      width: 50%;
+    }
+    .stars .fa {
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .stars .fa.active {
+      color: yellow;
+      text-shadow: 0 0 5px yellow;
+    }
+    .print {
+      color: #fff;
+    }
+    .print img {
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="star-rating">
+    <div class="stars">
+      <i class="fa fa-star active"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+    </div>
+    <div class="print">
+      별점 부탁드립니다.
+    </div>
+  </div>
+
+  <script>
+    $('.stars .fa').click(function(){
+      $(this).addClass('active');
+      $(this).prevAll().addClass('active');
+      $(this).nextAll().removeClass('active');
+
+      // 인덱스값 01234
+     var num = $(this).index();
+     var starRate = num+1;
+    //  $('.print').text(starRate);
+
+     if(starRate == 1) {
+      $('.print').html('<img src="./images/star-lv1.png">' + '최악')
+     }else if(starRate == 2) {
+      $('.print').html('<img src="./images/star-lv2.png" alt="">' + '별로')
+     }else if(starRate == 3) {
+      $('.print').html('<img src="./images/star-lv3.png" alt="">' + '보통');
+     }else if(starRate == 4) {
+      $('.print').html('<img src="./images/star-lv4.png" alt="">' + '괜찮네요')
+     }
+     else {
+      $('.print').html('<img src="./images/star-lv5.png" alt="">' + '대만족!!')
+     }
+    });
+  </script>
+</body>
+</html>

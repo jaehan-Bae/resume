@@ -22,8 +22,9 @@
             <a href="#feature1">Home</a>
             <a href="#feature2">About</a>
             <a href="#feature3">Skill</a>
-            <a href="#feature4">Portfolio</a>
-            <a href="#feature5">Contact</a>
+            <a href="#feature4">Toy project</a>
+            <a href="#feature5">Portfolio</a>
+            <a href="#feature6">Contact</a>
           </nav>
         </div>
       </div>
@@ -164,8 +165,32 @@
         </div >
       </div>
     </section>
-      <!-- ============== Section: Portfolio ============= -->
-    <section class="portfolio" id="feature4">
+    <!-- ============== Section: Toy ============= -->
+    <section class="toy" id="feature4">
+      <div class="toy-inner">
+        <h3 class="title">TOY PROJECT</h3>
+        <div class="toy-contents">
+          <a href="./star-rating.html" class="toy-con1" onclick="openWindow(event, 300, 300)">
+            <img src="./images/toy-section/jQuery-star.gif" alt="">
+          </a>
+          <a href="./1.html" class="toy-con2" onclick="openWindow(event, 800, 800)">
+            <img src="./images/toy-section/toy-band.png" alt="">
+          </a>
+          
+
+          <a class="toy-con3"></ㅁ>
+          <a class="toy-con4"></a>
+        </div>
+        <div class="toy-contents2">
+          <a class="toy-con5"></a>
+          <a class="toy-con6"></a>
+          <a class="toy-con7"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== Section: Portfolio ============= -->
+    <section class="portfolio" id="feature5">
       <div class="portfolio-inner">
         <h3 class="title">PORTFOLIO</h3>
         <div class="portfolio-contents">
@@ -174,7 +199,7 @@
               <h2>취다선</h2>
               <p>작업기간 : 2주</p>
               <p>작업인원 : 1인 (100%)</p>
-              <p>참고사항 : Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>참고사항 : 서브페이지3, 메인페이지1</p>
             </div>
             <div class="portfolio-btns">
               <a href="#">기능정의서</a>
@@ -195,40 +220,40 @@
       </div>
     </section>
 
-      <!-- ============== Section: Contact ============= -->
-      <section class="contact" id="feature5">
-        <div class="contact-inner">
-          <h3 class="title">CONTACT</h3>
-          <div class="contact-contents">
-            <div class="contact-img">
-              <img src="./images/footer.png" alt="walk_on_thewater">
+    <!-- ============== Section: Contact ============= -->
+    <section class="contact" id="feature6">
+      <div class="contact-inner">
+        <h3 class="title">CONTACT</h3>
+        <div class="contact-contents">
+          <div class="contact-img">
+            <img src="./images/footer.png" alt="walk_on_thewater">
+          </div>
+          <div class="contact-desc">
+            <div class="contact-title">
+              <img src="./images/quote-icon.png" alt="">
+              <h2>
+                배우고 앞으로 나아가는 사람이 되겠습니다.
+              </h2>
+              <span>yoosurang@kakao.com</span>
             </div>
-            <div class="contact-desc">
-              <div class="contact-title">
-                <img src="./images/quote-icon.png" alt="">
-                <h2>
-                  배우고 앞으로 나아가는 사람이 되겠습니다.
-                </h2>
-                <span>yoosurang@kakao.com</span>
-              </div>
-              <div class="contact-btns">
-                <a href="#">메일 보내기</a>
-                <a href="#">블로그 바로가기</a>
-              </div>
+            <div class="contact-btns">
+              <a href="#">메일 보내기</a>
+              <a href="#">블로그 바로가기</a>
             </div>
           </div>
-        </div >
-      </section>
-      
-      <!-- ============== Section: Footer ============= -->
-      <footer>
-        <div class="footer-content">
-          <p>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
-          <span>2019 Kim, Seung-yeon.©All Rights Reserved.</span>
         </div>
-      </footer>
+      </div >
+    </section>
       
-      <!-- ============== Section: Qick-menu ============= -->
+    <!-- ============== Section: Footer ============= -->
+    <footer>
+      <div class="footer-content">
+        <p>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
+        <span>2019 Kim, Seung-yeon.©All Rights Reserved.</span>
+      </div>
+    </footer>
+      
+    <!-- ============== Section: Qick-menu ============= -->
     <div class="goto-top">
       <ul class="goto-top-inner">
         <li><a href="#feature1">Home</a></li>
@@ -238,6 +263,69 @@
         <li><a href="#feature5">Contact</a></li>
       </ul>
     </div>
+
+
+    <!-- ============== Section: Toy-modal ============= -->
+    <!-- <div class="toy-modal">
+      <div class="toy-modal-con1">
+      <div class="toy-modal-open">
+        <i class="xi-close-thin close-modal"></i>
+          <div class="contents">
+            <div class="band-header">
+              <a href="#none">
+                <img src="./images/band-img/logo-band.png" alt="">
+              </a>
+            </div>
+            <div class="band">
+              <div class="band-section">
+                <div class="band-login">
+                  <div class="login-type">
+                    <h1>로그인</h1>
+                    <a href="#none" class="band-btn">휴대폰 번호로 로그인</a>
+                    <span class="or-text">또는</span>
+                    <a href="#none" class="band-btn">이메일로 로그인</a>
+                    <a href="#none" class="band-btn">네이버로 로그인</a>
+                    <a href="#none" class="band-btn">페이스북으로 로그인</a>
+                    <a href="#none" class="band-btn">라인으로 로그인</a>
+                  </div>
+                </div>
+                <div class="login-footer">
+                  <input type="checkbox" id="chk"><label for="chk">로그인 상태 유지</label>
+                  <p>밴드가 처음이신가요? <a>회원가입</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="toy-modal-con2 toy-modal-open">
+        <i class="xi-close-thin close-modal"></i>
+        <div class="contents">
+          <div class="star-rating">
+            <div class="stars">
+              <i class="fa fa-star active"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <div class="print">
+              별점 부탁드립니다.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
   </div>
+
+  <!-- <script>
+  function openWindow(width,height, name) {
+    var leftPos = Math.floor((screen.width - width) / 2);
+    var topPos = ((screen.height - height) / 2);
+    var newWindow = window.open('about:blank', name, '', 'width=' + width + ', height' + height + ', top=' + topPos +', left' + leftPos);
+    newWindow.location.href = this.href;
+    return false;
+  }
+  </script> -->
 </body>
 </html>

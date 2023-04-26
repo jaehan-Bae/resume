@@ -16,3 +16,14 @@ $(window).scroll(
     }
   );
 });
+
+// toy-modal
+function openWindow(event, width, height) {
+  event.preventDefault();
+  var leftPos = Math.floor((screen.width - width) / 2);
+  var topPos = Math.floor((screen.height - height) / 2);
+  var newWindow = window.open(event.target.href, '', 'width=' + width + ', height=' + height + ', top=' + topPos + ', left=' + leftPos);
+  return false;
+}
+
+

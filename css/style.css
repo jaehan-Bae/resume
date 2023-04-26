@@ -51,6 +51,9 @@ body {
   background-color: #fff;
   color: #222;
 }
+body.active {
+  overflow: hidden;
+}
 .eng {
   font-family: 'Montserrat', sans-serif;
 }
@@ -60,6 +63,8 @@ body {
   font-size: 40px;
   font-weight: bold;
   color: #444;
+  position: relative;
+  left: 240px;
 }
 
 /* ======= Style.css ======= */
@@ -100,7 +105,10 @@ nav a {
   font-weight: bold;
   padding-top: 180px;
 }
-
+nav a:hover {
+  color: #214777;
+  font-weight: bold;
+}
 /* ########## Section: welcome ########### */
 .welcome {}
 .welcome-inner {
@@ -138,9 +146,6 @@ nav a {
   width: 100%;
   position: relative;
 }
-/* .about-num {
-  position: relative;
-} */
 .about::before{
   content: '01';
   position: absolute;
@@ -157,8 +162,8 @@ nav a {
   margin: auto;
   position: relative;
   z-index: 10;
-  /* background-color: red; */
 }
+D
 .about-contents {
   overflow: hidden;
 }
@@ -221,9 +226,8 @@ nav a {
 /* ########## Section: Skill ########### */
 .skill {
   height: 100vh;
-  /* background-color: rgb(230, 239, 243); */
   position: relative;
-  border: 1px solid #000;
+  border: 1px solid #eee;
 }
 .skill::before{
   content: '02';
@@ -274,14 +278,122 @@ nav a {
 }
 
 
+/* ########## Section: Toy project ########### */
+.toy {
+  height: 100vh;
+  position: relative;
+  border: 1px solid #eee;
+}
+.toy::before{
+  content: '03';
+  position: absolute;
+  font-size: 250px;
+  top: 230px;
+  left: -20px;
+  font-weight: bold;
+  color: #EEEEEE;
+  line-height: 0 !important;
+}
+.toy-inner {
+  width: 1500px;
+  margin: auto;
+  height: inherit;
+  z-index: 10;
+}
+.toy-inner h3 {
+  position: absolute;
+  top: 260px;
+}
+.toy-contents {
+  display: flex;
+  justify-content: wrap;
+  margin-top: 100px;
+}
+.toy-contents2 {
+  display: flex;
+  justify-content: wrap;
+  margin-top: 100px;
+}
+.toy-con1 {
+  margin-left: 260px;
+}
+.toy-con1, 
+.toy-con2,
+.toy-con3,
+.toy-con4 {
+  width: 500px;
+  height: 350px;
+  border: 1px solid #ccc;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.117);
+  overflow: hidden;
+}
+.toy-con2,
+.toy-con3,
+.toy-con4 {
+  margin-left: 20px;
+}
+.toy-con2 img {
+  width: inherit;
+  height: inherit;
+  object-fit: contain;
+  object-position: left -5px top 0;
+}
+
+.toy-con5 {
+  margin-left: 40px;
+  width: 300px;
+  height: 400px;
+  border: 1px solid #000;
+}
+.toy-con6 {
+  margin-left: 30px;
+  width: 300px;
+  height: 400px;
+  border: 1px solid #000;
+}
+.toy-con7 {
+  margin-left: 30px;
+  width: 300px;
+  height: 400px;
+  border: 1px solid #000;
+}
+.toy-modal-con {
+  cursor: pointer;
+}
+.toy-modal-open {
+  background-color: #000000ce;
+  position: fixed;
+  width: 70%;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+  z-index: 9999;
+}
+.close-modal {
+  font-size: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+.contents {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
 /* ########## Section: Portfolio ########### */
 .portfolio {
   height: 100vh;
   position: relative;
-  border: 1px solid #000;
+  border: 1px solid #eee;
 }
 .portfolio::before{
-  content: '03';
+  content: '04';
   position: absolute;
   font-size: 250px;
   top: 230px;
@@ -306,6 +418,11 @@ nav a {
   /* text-align: center; */
   margin-bottom: 20px;
   font-weight: bold;
+}
+.portfolio-list a:hover {
+  background-color: rgba(158,213,246,0.5);
+  padding: 10px;
+  border-radius: 5px;
 }
 .portfolio-item {
   cursor: pointer;
@@ -348,10 +465,10 @@ nav a {
 .portfolio-btns {
   margin-top: 30px;
 }
-.portfolio-btns a:hover {
-  background: #214777;
-  color: #fff;
-}
+/* .portfolio-btns a:hover:not(::after,::before) {
+  background: skyblue;
+  color: #214777;
+} */
 .portfolio-btns a {
   border: 1px solid #214777;
   padding: 8px 20px;
@@ -366,14 +483,14 @@ nav a {
 .contact {
   height: 90vh;
   /* background-color: rgb(243, 252, 229); */
-  border: 1px solid #000;
+  border: 1px solid #eee;
   position: relative;
 }
 .contact::before{
-  content: '04';
+  content: '05';
   position: absolute;
   font-size: 250px;
-  top: 230px;
+  top: 250px;
   left: -20px;
   font-weight: bold;
   color: #EEEEEE;
@@ -464,4 +581,101 @@ footer {
 }
 .goto-top-inner a {
   color: #fff;
+}
+
+/* ########## Section: BAND Login Form ########### */
+.band {
+  width: 400px;
+  height: 600px;
+  background-color: #eee;
+}
+.band-header {
+  border-bottom: 1px solid #fff;
+  background-color: #fff;
+  height: 60px;
+  text-align: center;
+  padding-top: 15px;
+  box-sizing: border-box;
+  z-index: 9999;
+}
+.band-section {
+  /* height: calc(100vh - 60px); */
+  /* position: relative; */
+}
+.band-login {
+  width: 360px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.login-type h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 38px;
+  text-align: center;
+  font-weight: normal;
+}
+.band-btn {
+  border: 1px solid lightgray;
+  display: block;
+  text-align: center;
+  padding: 13px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #fff;
+  opacity: .8;
+}
+.band-btn:hover {
+  opacity: 1;
+}
+.band-btn:nth-of-type(1) {
+  background: #fff url(/images/band-img/logo-mobile.png) no-repeat center left 10px;
+  background-color: #fff;
+  color: #222;
+}
+.band-btn:nth-of-type(2) {
+  background: #898c9b url(/images/band-img/logo-email.png) no-repeat center left 13px;
+}
+.band-btn:nth-of-type(3) {
+  background: #11ce00 url(/images/band-img/logo-naver.png) no-repeat center left 13px;
+}
+.band-btn:nth-of-type(4) {
+  background: #0076fe url(/images/band-img/logo-facebook.png) no-repeat center left 13px;
+}
+.band-btn:nth-of-type(5) {
+  background: #00c026 url(/images/band-img/logo-line.png) no-repeat center left 13px;
+}
+.or-text {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+.or-text:before,
+.or-text:after {
+  position: absolute;
+  background-color: lightgray;
+  height: 1px;
+  width: 44%;
+  top: 10px;
+}
+.or-text:before {
+  content: '';
+  left: 0;
+}
+.or-text:after {
+  content: '';
+  right: 0;
+}
+.login-footer p {
+  text-align: center;
+}
+.login-footer p a {
+  font-weight: 400;
+}
+.login-footer p a {
+  text-decoration: underline;
+  cursor: pointer;
 }
