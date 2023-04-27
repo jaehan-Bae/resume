@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>배경이미지 풀 스크린 검색창</title>
+  <style>
+  /* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+      body {
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.5em;
+        margin: 0;
+        font-weight: 300;
+        background: url(./images/snow-photo.jpg) no-repeat center center fixed;
+      }
+      body:before {
+        content: '';
+        position: absolute;
+        background-color: #000;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: .5;
+        z-index: -1;
+      }
+      a{
+        text-decoration: none;
+      }
+      .search {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .search h1 {
+        color: #fff;
+        text-align: center;
+        font-weight: normal;
+        margin-top: 50px;
+        font-size: 36px;
+      }
+      .search input[type=text],
+      .search input[type=submit] {
+        padding: 20px;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+      }
+      .search input[type=text] {
+        width: 350px;
+        margin-right: -6px;
+        border-radius: 40px 0 0 40px;
+        padding-left: 40px;
+      }
+      .search input[type=submit] {
+        width: 150px;
+        border-radius: 0 40px 40px 0;
+        cursor: pointer;
+        background-color: orange;
+        color: #fff;
+      }
+      .search input[type=submit]:hover {
+        background-color: darkgoldenrod;
+      }
+      .search input[type=text]::placeholder {
+        font-size: 20px;
+        font-style: italic;
+      }
+  </style>
+</head>
+<body>
+  <form class="search">
+    <h1>What are you looking for?</h1>
+    <input type="text" placeholder="Type...">
+    <input type="submit" value="Search">
+  </form>
+</body>
+</html>

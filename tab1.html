@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>탭메뉴1</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+  body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5em;
+  margin: 0;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.testimonial-section {
+  width: 800px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+.testimonial-section h1 {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.testimonial-section span {
+  color: crimson;
+}
+.testimonial-pic img {
+  width: 100px;
+  margin-right: 10px;
+  filter: grayscale(1);
+  transition: .5s;
+  cursor: pointer;
+}
+.testimonial-pic img.active {
+  border-radius: 50%;
+  filter: none;
+}
+.testimonial .content p {
+  padding: 0 30px;
+}
+.testimonial .content p:nth-child(2) {
+  font-weight: bold;
+}
+.content {
+  display: none;
+}
+.content.active {
+  display: block;
+}
+</style>
+</head>
+<body>
+  <div class="testimonial-section">
+    <h1><span>Three cats </span> inside a tiger's den</h1>
+    <div class="testimonial-pic">
+      <img class="active" src="images/cat-tab1.png" data-alt="tab1">
+      <img src="images/cat-tab3.png" data-alt="tab2">
+      <img src="images/cat-tab2.png" data-alt="tab3">
+    </div>
+    <div class="testimonial">
+      <div class="content active" id="tab1">
+        <p>
+          "Beom is the first cat that came to our house among the three cats. Beom's breed is called 'Korat', which is known as a lucky cat. Since Beom came to our house, many interesting things have happened in our life. He often sleeps right next to me when he sleeps"
+      </p>
+      <p>Beom, 7years old</p>
+      </div>
+      <div class="content" id="tab2">
+        <p>
+          "Sans is a cat that I personally brought from the street. She is the only female among the cats and has a very gentle personality. She has a short tail, which is her attractive point. Just looking at her makes my heart ache." 
+      </p>
+      <p>Sands, 7years old</p>
+    </div>
+      <div class="content" id="tab3">
+        <p>
+          "Hoya is the youngest among the three cats, but he is the largest in size. These days, people call him the "domestic tiger" because he weighs almost 8kg. I love his big size, but he has a timid personality, which makes him funny to watch. Hoya loves to play the most."
+          <p>Hoya, 5years old</p>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $('.testimonial-pic img').click(function(){
+      $(this).addClass('active');
+      $(this).siblings().removeClass('active');
+
+      // $('#tab1').addClass('active')
+      $('.testimonial .content').removeClass('active');
+      $('#' + $(this).attr('data-alt')).addClass('active')
+    });
+  </script>
+</body>
+</html>

@@ -170,24 +170,27 @@
       <div class="toy-inner">
         <h3 class="title">TOY PROJECT</h3>
         <div class="toy-contents">
-          <a href="./star-rating.html" class="toy-con1" onclick="openWindow(event, 300, 300)">
+          <a href="#" class="toy-con1" onclick="openWindow(event, 300, 300, './star-rating.html')">
             <img src="./images/toy-section/jQuery-star.gif" alt="">
           </a>
-          <a href="./1.html" class="toy-con2" onclick="openWindow(event, 800, 800)">
+          <a href="#" class="toy-con2" onclick="openWindow(event, 800, 800, './band-login.html')">
             <img src="./images/toy-section/toy-band.png" alt="">
           </a>
-          
-
-          <a class="toy-con3"></ㅁ>
-          <a class="toy-con4"></a>
+          <a href="#" class="toy-con3" onclick="openWindow(event, 700, 700, './tab1.html')">
+            <img src="./images/toy-section/cat-tabs.gif" alt="">
+          </a>
+          <a href="#" class="toy-con4" onclick="openWindow(event, 1000, 1000, './full-screen.html')">
+            <img src="./images/toy-section/toy-full-screen.png" alt="">
+          </a>
         </div>
         <div class="toy-contents2">
-          <a class="toy-con5"></a>
-          <a class="toy-con6"></a>
-          <a class="toy-con7"></a>
+          <a href="#" class="toy-con5"></a>
+          <a href="#" class="toy-con6"></a>
+          <a href="#" class="toy-con7"></a>
         </div>
       </div>
     </section>
+    
 
     <!-- ============== Section: Portfolio ============= -->
     <section class="portfolio" id="feature5">
@@ -209,9 +212,9 @@
           <div class="portfolio-right">
             <div class="portfolio-mockup">
               <div class="portfolio-list">
-                <a class="portfolio-item">취다선</a>
-                <a class="portfolio-item">포트폴리오2</a>
-                <a class="portfolio-item">포트폴리오3</a>
+                <a class="portfolio-item"><span>취다선</span></a>
+                <a class="portfolio-item"><span>로스토리</span></a>
+                <a class="portfolio-item"><span>포트폴리오3</span></a>
               </div>
               <img src="./images/monitor-mockup.png" alt="">
             </div>
@@ -264,68 +267,5 @@
       </ul>
     </div>
 
-
-    <!-- ============== Section: Toy-modal ============= -->
-    <!-- <div class="toy-modal">
-      <div class="toy-modal-con1">
-      <div class="toy-modal-open">
-        <i class="xi-close-thin close-modal"></i>
-          <div class="contents">
-            <div class="band-header">
-              <a href="#none">
-                <img src="./images/band-img/logo-band.png" alt="">
-              </a>
-            </div>
-            <div class="band">
-              <div class="band-section">
-                <div class="band-login">
-                  <div class="login-type">
-                    <h1>로그인</h1>
-                    <a href="#none" class="band-btn">휴대폰 번호로 로그인</a>
-                    <span class="or-text">또는</span>
-                    <a href="#none" class="band-btn">이메일로 로그인</a>
-                    <a href="#none" class="band-btn">네이버로 로그인</a>
-                    <a href="#none" class="band-btn">페이스북으로 로그인</a>
-                    <a href="#none" class="band-btn">라인으로 로그인</a>
-                  </div>
-                </div>
-                <div class="login-footer">
-                  <input type="checkbox" id="chk"><label for="chk">로그인 상태 유지</label>
-                  <p>밴드가 처음이신가요? <a>회원가입</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="toy-modal-con2 toy-modal-open">
-        <i class="xi-close-thin close-modal"></i>
-        <div class="contents">
-          <div class="star-rating">
-            <div class="stars">
-              <i class="fa fa-star active"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-            </div>
-            <div class="print">
-              별점 부탁드립니다.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-  </div>
-
-  <!-- <script>
-  function openWindow(width,height, name) {
-    var leftPos = Math.floor((screen.width - width) / 2);
-    var topPos = ((screen.height - height) / 2);
-    var newWindow = window.open('about:blank', name, '', 'width=' + width + ', height' + height + ', top=' + topPos +', left' + leftPos);
-    newWindow.location.href = this.href;
-    return false;
-  }
-  </script> -->
 </body>
 </html>

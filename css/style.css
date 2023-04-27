@@ -63,7 +63,7 @@ body.active {
   font-size: 40px;
   font-weight: bold;
   color: #444;
-  position: relative;
+  /* position: relative; */
   left: 240px;
 }
 
@@ -163,7 +163,6 @@ nav a:hover {
   position: relative;
   z-index: 10;
 }
-D
 .about-contents {
   overflow: hidden;
 }
@@ -192,6 +191,10 @@ D
   color: #214777;
   font-size: 100px;
   font-weight: bold;
+}
+.about-headline h3 {
+  /* position: absolute;
+  left: -100px; */
 }
 .about-headline span {
   display: block;
@@ -338,7 +341,12 @@ D
   object-fit: contain;
   object-position: left -5px top 0;
 }
-
+.toy-con4 img {
+  width: inherit;
+  height: inherit;
+  object-fit: contain;
+  object-position: left -60px top 0;
+}
 .toy-con5 {
   margin-left: 40px;
   width: 300px;
@@ -419,14 +427,11 @@ D
   margin-bottom: 20px;
   font-weight: bold;
 }
-.portfolio-list a:hover {
+.portfolio-list span:hover {
   background-color: rgba(158,213,246,0.5);
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
-}
-.portfolio-item {
   cursor: pointer;
-  /* margin-right: 30px; */
 }
 .portfolio-item::after {
   content: '|';
@@ -465,10 +470,6 @@ D
 .portfolio-btns {
   margin-top: 30px;
 }
-/* .portfolio-btns a:hover:not(::after,::before) {
-  background: skyblue;
-  color: #214777;
-} */
 .portfolio-btns a {
   border: 1px solid #214777;
   padding: 8px 20px;
