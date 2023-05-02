@@ -537,10 +537,10 @@ nav a:hover {
 .contact-title span {
   font-size: 20px;
 }
-.contact-btns {
+.contact-btns, .portfolio-btns {
   margin-top: 40px;
 }
-.contact-btns a {
+.contact-btns a, .portfolio-btns a {
   margin-right: 15px;
   padding: 8px 15px;
   border-radius: 5px;
@@ -548,7 +548,8 @@ nav a:hover {
   color: #fff;
   transition: .5s;
 }
-.contact-btns a:hover {
+.contact-btns a:hover,
+.portfolio-btns a:hover {
   background-color: #fff;
   border: 1px solid #214777;
   color: #214777;
@@ -679,4 +680,12 @@ footer {
 .login-footer p a {
   text-decoration: underline;
   cursor: pointer;
+}
+/* ########## Section: frs ########### */
+.frs-desc {
+  margin: auto;
+  align-items: center;
+}
+.frs-desc img {
+  width: 100%;
 }
