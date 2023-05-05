@@ -140,9 +140,17 @@ nav a:hover {
   margin-bottom: -90px;
 }
 
+/* Entire Layout */
+.cd-section {
+  height: 100vh;
+}
+.cd-section > div {
+  height: 100%;
+  position: relative;
+}
+
 /* ########## Section: About ########### */
 .about {
-  height: 100vh;
   width: 100%;
   position: relative;
 }
@@ -228,7 +236,6 @@ nav a:hover {
 
 /* ########## Section: Skill ########### */
 .skill {
-  height: 100vh;
   position: relative;
   border: 1px solid #eee;
 }
@@ -283,7 +290,6 @@ nav a:hover {
 
 /* ########## Section: Toy project ########### */
 .toy {
-  height: 100vh;
   position: relative;
   border: 1px solid #eee;
 }
@@ -396,7 +402,6 @@ nav a:hover {
 
 /* ########## Section: Portfolio ########### */
 .portfolio {
-  height: 100vh;
   position: relative;
   border: 1px solid #eee;
 }
@@ -568,7 +573,7 @@ footer {
 }
 
 /* ########## Section: Qick menu ########### */
-.goto-top {
+/* .goto-top {
   position: absolute;
   right: 20px;
   top: 300px;
@@ -583,6 +588,18 @@ footer {
 }
 .goto-top-inner a {
   color: #fff;
+} */
+.next-page {
+  position: absolute;
+  right: 20px;
+  top: 300px;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 /* ########## Section: BAND Login Form ########### */
@@ -681,6 +698,7 @@ footer {
   text-decoration: underline;
   cursor: pointer;
 }
+
 /* ########## Section: frs ########### */
 .frs-desc {
   margin: auto;
