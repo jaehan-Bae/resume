@@ -7,7 +7,8 @@ $(function () {
       $('header').removeClass('active');
     }
   });
-/*
+
+  
   //Wheel Scroll Chage
     // 1.마우스 휠이 움직이면, 이벤트 핸들러 내부에서 스크롤 이벤트를 막는다. (a태그 위로 올라가는 현상 방지)
     // passive : false 스크롤 이벤트가 메인 스레드를 차단하지 않도록 한다.
@@ -46,7 +47,15 @@ $(function () {
       $html.animate({ scrollTop: posTop }, timeScrollAnimation);
 
     });
-*/
+
+
+    /* TypeIt - Welcome */
+    $('#typing').typeIt({
+      strings: ["Web publisher", "Front-end developers"],
+      speed: 100,
+      autoStart: true,
+      breakLines: false,
+    });
 
   /* Header Scroll Change */
   $(window).scroll(
@@ -57,6 +66,7 @@ $(function () {
   );
 });
 
+  // Window Open event 
 function openWindow(event, width, height, url) {
   event.preventDefault();
   var leftPos = Math.floor((screen.width - width) / 2);
@@ -64,4 +74,5 @@ function openWindow(event, width, height, url) {
   var newWindow = window.open(url, '', 'width=' + width + ', height=' + height + ', top=' + topPos + ', left=' + leftPos);
   return false;
 }
+
 

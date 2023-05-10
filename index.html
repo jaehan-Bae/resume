@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>김승연 이력서 홈페이지</title>
-  <script src="./js/jquery.js"></script>
-  <!-- Page Scroll Effects JS & CSS -->
-  <!-- <script src="js/velocity/modernizr.js"></script> -->
-  <script src="./js/velocity/velocity.min.js"></script>
-  <script src="./js/velocity/velocity.ui.min.js"></script>
-  <script src="./js/velocity/velocity.css"></script>
-  <link rel="stylesheet" href="js/velocity/velocity.css">
+  <title>resume page</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <!-- TypeIt -->
+  <script src="js/typeit.min.js"></script>
   <!-- Custom JS & CSS -->
-  <script src="./js/custom.js"></script>
   <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/custom.js"></script>
 </head>
-<body >
+
+<body>
   <div class="container">
     <!-- ============== header ============= -->
     <header>
@@ -38,177 +37,178 @@
     </header>
 
     <!-- ============== Section: welcome ============= -->
-    <section class="welcome cd-section visible" id="feature1">
-      <div>
-        <div class="welcome-img">
-          <img src="./images/main-img1.jpg" alt="">
-        </div>
-        <div class="welcome-inner">
-          <div class="welcome-head">
-            <h2 class="eng">
-              <span>Front End</span>
-               Developer
-            </h2>
+    <section class="welcome fullsection">
+      <div class="welcome-img">
+        <img src="./images/main-img1.jpg" alt="">
+      </div>
+      <div class="welcome-inner">
+        <div class="welcome-head eng">
+          <div class="head-inner">
+            <p>2023<em id="typing"></em></p>
+            <span>Portfolio </span>
+            <p class="name">KIM SEUNG YEON</p>
           </div>
+        </div>
+        <div class="welcome-scroll">
+          <p>Scroll Down</p>
+          <span><i class="xi-angle-down"></i></span>
         </div>
       </div>
     </section>
 
-      <!-- ============== Section: About ============= -->
-    <section class="about cd-section" id="feature2">
-      <div>
-        <div class="about-inner">
-          <div class="about-contents">
-            <div class="about-left">
-              <div class="about-headline">
-                <h3 class="title">ABOUT ME</h3>
-                <h1>Kim<span>Seung Yeon</span></h1>
-                <div class="about-introduce">
-                  <p>
-                    안녕하세요.
-                    사용자에게 최적의 경험을 선사하는 웹 퍼블리셔가 되겠습니다.
-                    사용자에게 최적의 경험을 선사하는 웹 퍼블리셔가 되겠습니다.
-                    사용자에게 최적의 경험을 선사하는 웹 퍼블리셔가 되겠습니다.
-                  </p>
-                </div>
-              </div>
-              <div class="about-img">
-                <img src="./images/seung-yeon.png" alt="">
+    <!-- ============== Section: About ============= -->
+    <section class="about fullsection full2" id="feature2" pageNum="1">
+      <div class="about-inner">
+        <div class="about-contents">
+          <div class="about-left">
+            <div class="about-headline">
+              <h3 class="title">ABOUT ME</h3>
+              <h1 class="eng">Kim<span>Seung Yeon</span></h1>
+              <div class="about-introduce">
+                <p>
+                  안녕하세요.
+                  사용자에게 최적의 경험을 선사하는 웹 퍼블리셔가 되겠습니다.
+                  사용자에게 최적의 경험을 선사하는 웹 퍼블리셔가 되겠습니다.
+                  사용자에게 최적의 경험을 선사하는 웹 퍼블리셔가 되겠습니다.
+                </p>
               </div>
             </div>
-            <div class="about-right">
-              <div class="about-background">
-                <ul class="about-th">
-                  <li>이름</li>
-                  <li>학력</li>
-                  <li>자격증</li>
-                  <br>
-                  <br>
-                  <br>
-                  <li>수료</li>
-                </ul>
-                <ul class="about-td">
-                  <li>김승연</li>
-                  <li>안동대학교 한문학과 졸업(4.01/4.5)</li>
-                  <li>워드프로세서 1급</li>
-                  <li>컴퓨터 활용능력 2급</li>
-                  <li>리눅스마스터 2급</li>
-                  <li>JLPT N1</li>
-                  <li>코리아 IT 아카데미 프론트엔드 개발자과정</li>
-                </ul>
-              </div>
+            <div class="about-img">
+              <img src="./images/seung-yeon.png" alt="">
+            </div>
+          </div>
+          <div class="about-right">
+            <div class="about-background">
+              <ul class="about-th">
+                <li>이름</li>
+                <li>학력</li>
+                <li>자격증</li>
+                <br>
+                <br>
+                <br>
+                <li>수료</li>
+              </ul>
+              <ul class="about-td">
+                <li>김승연</li>
+                <li>안동대학교 한문학과 졸업(4.01/4.5)</li>
+                <li>워드프로세서 1급</li>
+                <li>컴퓨터 활용능력 2급</li>
+                <li>리눅스마스터 2급</li>
+                <li>JLPT N1</li>
+                <li>코리아 IT 아카데미 프론트엔드 개발자과정</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
-      <!-- ============== Section: Skill ============= -->
-    <section class="skill cd-section" id="feature3">
-      <div>
-        <div class="skill-inner">
-          <h3 class="title">SKILL</h3>
-          <div class="skill-contents">
-            <div class="skill-left">
-              <h1>Markup Language</h1>
-              <div class="skill-con">
-                <div class="skill-head">
-                  <img src="./images/html-logo.png" alt="html-icon">
-                </div>
-                <div class="skill-bottom">
-                  <span>
-                    시멘틱태그 마크업, 부모-자식관계 이해도, 폼요소 활용(input, select, form, button), 유니코드/아이콘 사용, target 속성, display 속성 이해도
-                  </span>
-                </div>
+    <!-- ============== Section: Skill ============= -->
+    <section class="skill fullsection full3" id="feature3" pageNum="2">
+      <div class="skill-inner">
+        <h3 class="title">SKILL</h3>
+        <div class="skill-contents">
+          <div class="skill-left">
+            <h1>Markup Language</h1>
+            <div class="skill-con">
+              <div class="skill-head">
+                <img src="./images/html-logo.png" alt="html-icon">
               </div>
-              <div class="skill-con">
-                <div class="skill-head">
-                  <img src="./images/css-logo.png" alt="css-icon">
-                </div>
-                <div class="skill-bottom">
-                  <span>
-                    미디어쿼리, 선택자 사용, 박스모델링, position을 활용한 배치, form 요소를 활용한 로그인/회원가입 페이지 제작, flex를 활용한 배치, keyframe을 활용한 애니메이션 제작
-                  </span>
-                </div>
-              </div>
-              <div class="skill-con">
-                <div class="skill-head">
-                  <img src="./images/jquery-logo.png" alt="jquery-icon">
-                </div>
-                <div class="skill-bottom">
-                  <span>
-                    동적 UI 구성, 이펙트(addClass/removeClass, fadeIn/Out .etc), 플러그인 활용, 요소 탐색 메서드 이해도(children,siblings), 선택자(this)활용.
-                  </span>
-                </div>
+              <div class="skill-bottom">
+                <span>
+                  시멘틱태그 마크업, 부모-자식관계 이해도, 폼요소 활용(input, select, form, button), 유니코드/아이콘 사용, target 속성, display 속성 이해도
+                </span>
               </div>
             </div>
-            <div class="skill-right">
-              <h1>Development Language</h1>
-              <div class="skill-con">
-                <div class="skill-head">
-                  <img src="./images/js-logo.png" alt="js-icon">
-                </div>
-                <div class="skill-bottom">
-                  <span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A illo ad, corporis fuga facilis velit animi blanditiis non libero?
-                  </span>
-                </div>
+            <div class="skill-con">
+              <div class="skill-head">
+                <img src="./images/css-logo.png" alt="css-icon">
               </div>
-              <div class="skill-con">
-                <div class="skill-head">
-                  <img src="./images/react-logo.png" alt="react-icon">
-                </div>
-                <div class="skill-bottom">
-                  <span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A illo ad, corporis fuga facilis velit animi blanditiis non libero?
-                  </span>
-                </div>
-              </div>
-              <div class="skill-con">
-                <div class="skill-head">
-                  <img src="./images/postgresql-icon.png" alt="postgresql-icon">
-                </div>
-                <div class="skill-bottom">
-                  <span>
-                    SELECT, WHERE, GROUP BY, JOIN, ORDER BY 등의 명령어와 개념을 이해하고 활용
-                  </span>
-                </div>
+              <div class="skill-bottom">
+                <span>
+                  미디어쿼리, 선택자 사용, 박스모델링, position을 활용한 배치, form 요소를 활용한 로그인/회원가입 페이지 제작, flex를 활용한 배치, keyframe을 활용한
+                  애니메이션 제작
+                </span>
               </div>
             </div>
-          </div >
+            <div class="skill-con">
+              <div class="skill-head">
+                <img src="./images/jquery-logo.png" alt="jquery-icon">
+              </div>
+              <div class="skill-bottom">
+                <span>
+                  동적 UI 구성, 이펙트(addClass/removeClass, fadeIn/Out .etc), 플러그인 활용, 요소 탐색 메서드 이해도(children,siblings),
+                  선택자(this)활용.
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-right">
+            <h1>Development Language</h1>
+            <div class="skill-con">
+              <div class="skill-head">
+                <img src="./images/js-logo.png" alt="js-icon">
+              </div>
+              <div class="skill-bottom">
+                <span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A illo ad, corporis fuga facilis velit animi
+                  blanditiis non libero?
+                </span>
+              </div>
+            </div>
+            <div class="skill-con">
+              <div class="skill-head">
+                <img src="./images/react-logo.png" alt="react-icon">
+              </div>
+              <div class="skill-bottom">
+                <span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A illo ad, corporis fuga facilis velit animi
+                  blanditiis non libero?
+                </span>
+              </div>
+            </div>
+            <div class="skill-con">
+              <div class="skill-head">
+                <img src="./images/postgresql-icon.png" alt="postgresql-icon">
+              </div>
+              <div class="skill-bottom">
+                <span>
+                  SELECT, WHERE, GROUP BY, JOIN, ORDER BY 등의 명령어와 개념을 이해하고 활용
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- ============== Section: Toy ============= -->
-    <section class="toy cd-section" id="feature4">
-      <div>
-        <div class="toy-inner">
-          <h3 class="title">TOY PROJECT</h3>
-          <div class="toy-contents">
-            <a href="#" class="toy-con1" onclick="openWindow(event, 300, 300, './star-rating.html')">
-              <img src="./images/toy-section/jQuery-star.gif" alt="">
-            </a>
-            <a href="#" class="toy-con2" onclick="openWindow(event, 800, 800, './band-login.html')">
-              <img src="./images/toy-section/toy-band.png" alt="">
-            </a>
-            <a href="#" class="toy-con3" onclick="openWindow(event, 700, 700, './tab1.html')">
-              <img src="./images/toy-section/cat-tabs.gif" alt="">
-            </a>
-            <a href="#" class="toy-con4" onclick="openWindow(event, 1000, 1000, './full-screen.html')">
-              <img src="./images/toy-section/toy-full-screen.png" alt="">
-            </a>
-          </div>
-          <div class="toy-contents2">
-            <a href="#" class="toy-con5"></a>
-            <a href="#" class="toy-con6"></a>
-            <a href="#" class="toy-con7"></a>
-          </div>
+    <section class="toy fullsection full4" id="feature4" pageNum="3">
+      <div class="toy-inner">
+        <h3 class="title">TOY PROJECT</h3>
+        <div class="toy-contents">
+          <a href="#" class="toy-con1" onclick="openWindow(event, 300, 300, './star-rating.html')">
+            <img src="./images/toy-section/jQuery-star.gif" alt="">
+          </a>
+          <a href="#" class="toy-con2" onclick="openWindow(event, 800, 800, './band-login.html')">
+            <img src="./images/toy-section/toy-band.png" alt="">
+          </a>
+          <a href="#" class="toy-con3" onclick="openWindow(event, 700, 700, './tab1.html')">
+            <img src="./images/toy-section/cat-tabs.gif" alt="">
+          </a>
+          <a href="#" class="toy-con4" onclick="openWindow(event, 1000, 1000, './full-screen.html')">
+            <img src="./images/toy-section/toy-full-screen.png" alt="">
+          </a>
+        </div>
+        <div class="toy-contents2">
+          <a href="#" class="toy-con5"></a>
+          <a href="#" class="toy-con6"></a>
+          <a href="#" class="toy-con7"></a>
         </div>
       </div>
     </section>
-    
+
 
     <!-- ============== Section: Portfolio ============= -->
-    <section class="portfolio cd-section" id="feature5">
+    <section class="portfolio fullsection full5" id="feature5" pageNum="4">
       <div class="portfolio-inner">
         <h3 class="title">PORTFOLIO</h3>
         <div class="portfolio-contents">
@@ -239,7 +239,7 @@
     </section>
 
     <!-- ============== Section: Contact ============= -->
-    <section class="contact cd-section" id="feature6">
+    <section class="contact fullsection full6" id="feature6" pageNum="5">
       <div class="contact-inner">
         <h3 class="title">CONTACT</h3>
         <div class="contact-contents">
@@ -260,9 +260,9 @@
             </div>
           </div>
         </div>
-      </div >
+      </div>
     </section>
-      
+
     <!-- ============== Section: Footer ============= -->
     <footer>
       <div class="footer-content">
@@ -270,9 +270,9 @@
         <span>2019 Kim, Seung-yeon.©All Rights Reserved.</span>
       </div>
     </footer>
-      
+
     <!-- ============== Section: Qick-menu ============= -->
-    <!-- <div class="goto-top">
+    <div class="goto-top">
       <ul class="goto-top-inner">
         <li><a href="#feature1">Home</a></li>
         <li><a href="#feature2">About</a></li>
@@ -280,16 +280,11 @@
         <li><a href="#feature4">Portfolio</a></li>
         <li><a href="#feature5">Contact</a></li>
       </ul>
-    </div> -->
-    <!-- <div class="next-page"></div> -->
-    <nav>
-      <ul class="cd-vertical-nav">
-        <li><a href="#0" class="cd-prev inactive">Next</a></li>
-        <li><a href="#0" class="cd-next">Prev</a></li>
-      </ul>
-    </nav>
+    </div>
+
     <!-- ============== Section: Frs ============= -->
 
 
 </body>
+
 </html>
