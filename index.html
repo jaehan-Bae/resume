@@ -29,8 +29,8 @@
             <a href="#feature1">Home</a>
             <a href="#feature2">About</a>
             <a href="#feature3">Skill</a>
-            <a href="#feature4">Toy project</a>
-            <a href="#feature5">Portfolio</a>
+            <a href="#feature4">Portfolio</a>
+            <a href="#feature5">Toy project</a>
             <a href="#feature6">Contact</a>
           </nav>
         </div>
@@ -38,7 +38,7 @@
     </header>
 
     <!-- ============== Section: welcome ============= -->
-    <section class="welcome fullsection">
+    <section class="welcome fullsection" id="#feature1">
       <div class="welcome-img">
         <img src="./images/main-img1.jpg" alt="">
       </div>
@@ -58,7 +58,7 @@
     </section>
 
     <!-- ============== Section: About ============= -->
-    <section class="about fullsection">
+    <section class="about fullsection" id="feature2">
       <div class="about-inner">
         <div class="about-contents">
           <div class="about-left">
@@ -95,30 +95,30 @@
         </div>
         <div class="about-introduce">
           <div>
-            <p class="hash-desc">
+            <a href="https://blog.naver.com/didrh31/222895826108" target="_blank" class="hash-desc">
               <span class="hash">#Record</span>
               기억보단 기록을! 어려운 코드를 기록해가며 쌓이는 나만의 데이터
-            </p>
-            <p class="hash-desc">
+            </a>
+            <a href="#feature5" class="hash-desc">
               <span class="hash">#Dream</span>
               자신이 제작한 UI를 다수의 사용자가 누리며 즐기는 것을 보는 기쁨
-            </p>
+            </a>
           </div>
           <div>
-            <p class="hash-desc">
+            <a href="#feature4" class="hash-desc">
               <span class="hash">#Communication</span>
               사용자의 니즈를 경청해 함께 만들어 나가는 행복
-            </p>
-            <p class="hash-desc">
+            </a>
+            <a href="https://beom31.tistory.com/category" target="_blank" class="hash-desc">
               <span class="hash">#Mental</span>
               하루아침에 되는 것은 없다! 꾸준히 노력해 단계별로 성장하는 향상심
-            </p>
+            </a>
           </div>
         </div>
       </div>
     </section>
     <!-- ============== Section: Skill ============= -->
-    <section class="skill fullsection">
+    <section class="skill fullsection" id="feature3">
       <div class="skill-inner">
         <h3 class="title">SKILL</h3>
         <div class="skill-contents">
@@ -195,35 +195,10 @@
         </div>
       </div>
     </section>
-    <!-- ============== Section: Toy ============= -->
-    <section class="toy fullsection">
-      <div class="toy-inner">
-        <h3 class="title">TOY PROJECT</h3>
-        <div class="toy-contents">
-          <a href="#" class="toy-con1" onclick="openWindow(event, 300, 300, './star-rating.html')">
-            <img src="./images/toy-section/jQuery-star.gif" alt="">
-          </a>
-          <a href="#" class="toy-con2" onclick="openWindow(event, 800, 800, './band-login.html')">
-            <img src="./images/toy-section/toy-band.png" alt="">
-          </a>
-          <a href="#" class="toy-con3" onclick="openWindow(event, 700, 700, './tab1.html')">
-            <img src="./images/toy-section/cat-tabs.gif" alt="">
-          </a>
-          <a href="#" class="toy-con4" onclick="openWindow(event, 1000, 1000, './full-screen.html')">
-            <img src="./images/toy-section/toy-full-screen.png" alt="">
-          </a>
-        </div>
-        <div class="toy-contents2">
-          <a href="#" class="toy-con5"></a>
-          <a href="#" class="toy-con6"></a>
-          <a href="#" class="toy-con7"></a>
-        </div>
-      </div>
-    </section>
 
 
     <!-- ============== Section: Portfolio ============= -->
-    <section class="portfolio fullsection">
+    <section class="portfolio fullsection" id="feature4">
       <div class="portfolio-inner">
         <h3 class="title">PORTFOLIO</h3>
         <div class="portfolio-contents">
@@ -253,8 +228,48 @@
       </div>
     </section>
 
+    <!-- ============== Section: Toy ============= -->
+    <section class="toy fullsection" id="feature5">
+      <div class="toy-inner">
+        <h3 class="title">TOY PROJECT</h3>
+        <div class="toy-contents">
+          <a href="#" class="toy-con1" onclick="openWindow(event, 300, 300, './star-rating.html')">
+            <div class="toy-img">
+              <img src="./images/toy-section/jQuery-star.gif" alt="">
+                <div class="overlay">
+                  <div class="text">자바스크립트로 별점주기</div>
+                </div>
+            </div>
+          </a>
+          <a href="#" class="toy-con2" onclick="openWindow(event, 800, 800, './band-login.html')">
+            <img src="./images/toy-section/toy-band.png" alt="">
+            <div class="overlay">
+              <div class="text">밴드 로그인 UI</div>
+            </div>
+          </a>
+          <a href="#" class="toy-con3" onclick="openWindow(event, 700, 700, './tab1.html')">
+            <img src="./images/toy-section/cat-tabs.gif" alt="">
+            <div class="overlay">
+              <div class="text">탭메뉴(data- 속성)</div>
+            </div>
+          </a>
+          <a href="#" class="toy-con4" onclick="openWindow(event, 1000, 1000, './full-screen.html')">
+            <img src="./images/toy-section/toy-full-screen.png" alt="">
+            <div class="overlay">
+              <div class="text">full screen UI</div>
+            </div>
+          </a>
+        </div>
+        <div class="toy-contents2">
+          <a href="#" class="toy-con5"></a>
+          <a href="#" class="toy-con6"></a>
+          <a href="#" class="toy-con7"></a>
+        </div>
+      </div>
+    </section>
+
     <!-- ============== Section: Contact ============= -->
-    <section class="contact fullsection">
+    <section class="contact fullsection" id="feature6">
       <div class="contact-inner">
         <h3 class="title">CONTACT</h3>
         <div class="contact-contents">

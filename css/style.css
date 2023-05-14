@@ -212,13 +212,6 @@ nav a:hover {
   }
 }
 
-/* section.welcome {display: none;} */
-/* section.about {display: none;} */
-/* section.skill {display: none;} */
-/* section.toy {display: none;} */
-/* section.portfolio {display: none;} */
-/* section.contact {display: none;} */
-
 /* ########## Section: About ########### */
 .about {
   position: relative;
@@ -233,6 +226,7 @@ nav a:hover {
   color: #EEEEEE;
   line-height: 0 !important;
 }
+
 .about-inner {
   width: 1500px;
   margin: auto;
@@ -310,6 +304,7 @@ nav a:hover {
 .hash-desc {
   margin-top: 40px;
   font-size: 20px;
+  display: block;
 }
 .hash {
   font-family: 'Josefin Sans', sans-serif;
@@ -320,7 +315,20 @@ nav a:hover {
   border-radius: 20px;
   font-size: 30px;
   margin-right: 20px;
+  transition: .3s;
+  cursor: pointer;
 }
+.hash:hover {
+  background-color: #214777;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.273);
+}
+
+/* section.welcome {display: none;}
+section.about {display: none;}
+section.skill {display: none;}
+section.portfolio {display: none;} */
+/* section.toy {display: none;} */
+/* section.contact {display: none;} */
 
 /* ########## Section: Skill ########### */
 .skill {
@@ -373,125 +381,12 @@ nav a:hover {
 .skill-bottom {
   width: 60%;
 }
-
-
-/* ########## Section: Toy project ########### */
-.toy {
-  border: 1px solid #eee;
-}
-.toy::before{
-  content: '03';
-  position: absolute;
-  font-size: 250px;
-  top: 25%;
-  left: -20px;
-  font-weight: bold;
-  color: #EEEEEE;
-  line-height: 0 !important;
-}
-.toy-inner {
-  width: 1500px;
-  margin: auto;
-  height: inherit;
-  z-index: 10;
-}
-.toy-inner h3 {
-  position: absolute;
-  top: 28%;
-}
-.toy-contents {
-  display: flex;
-  justify-content: wrap;
-  margin-top: 100px;
-}
-.toy-contents2 {
-  display: flex;
-  justify-content: wrap;
-  margin-top: 100px;
-}
-.toy-con1 {
-  margin-left: 260px;
-}
-.toy-con1, 
-.toy-con2,
-.toy-con3,
-.toy-con4 {
-  width: 500px;
-  height: 350px;
-  border: 1px solid #ccc;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.117);
-  overflow: hidden;
-}
-.toy-con2,
-.toy-con3,
-.toy-con4 {
-  margin-left: 20px;
-}
-.toy-con2 img {
-  width: inherit;
-  height: inherit;
-  object-fit: contain;
-  object-position: left -5px top 0;
-}
-.toy-con4 img {
-  width: inherit;
-  height: inherit;
-  object-fit: contain;
-  object-position: left -60px top 0;
-}
-.toy-con5 {
-  margin-left: 40px;
-  width: 300px;
-  height: 400px;
-  border: 1px solid #000;
-}
-.toy-con6 {
-  margin-left: 30px;
-  width: 300px;
-  height: 400px;
-  border: 1px solid #000;
-}
-.toy-con7 {
-  margin-left: 30px;
-  width: 300px;
-  height: 400px;
-  border: 1px solid #000;
-}
-.toy-modal-con {
-  cursor: pointer;
-}
-.toy-modal-open {
-  background-color: #000000ce;
-  position: fixed;
-  width: 70%;
-  height: 70%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  display: none;
-  z-index: 9999;
-}
-.close-modal {
-  font-size: 40px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
-  color: #fff;
-}
-.contents {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-
 /* ########## Section: Portfolio ########### */
 .portfolio {
   border: 1px solid #eee;
 }
 .portfolio::before{
-  content: '04';
+  content: '03';
   position: absolute;
   font-size: 250px;
   top: 25%;
@@ -568,6 +463,133 @@ nav a:hover {
   cursor: pointer;
   color: #214777;
   transition: .5s;
+}
+
+
+/* ########## Section: Toy project ########### */
+.toy {
+  border: 1px solid #eee;
+}
+.toy::before{
+  content: '04';
+  position: absolute;
+  font-size: 250px;
+  top: 25%;
+  left: -20px;
+  font-weight: bold;
+  color: #EEEEEE;
+  line-height: 0 !important;
+}
+.toy-inner {
+  width: 1500px;
+  margin: auto;
+  height: inherit;
+  z-index: 10;
+}
+.toy-inner h3 {
+  position: absolute;
+  top: 28%;
+}
+.toy-contents,
+.toy-contents2 {
+  display: flex;
+  justify-content: wrap;
+  margin-top: 100px;
+}
+.toy-contents > a,
+.toy-contents2 > a {
+  width: 500px;
+  height: 350px;
+  border: 1px solid transparent;
+  overflow: hidden;
+  transition: .5s;
+  position: relative;
+}
+.text {
+  position: absolute;
+  /* opacity: 0; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* width: inherit;
+  height: inherit; */
+  border: 1px solid #aaa;
+  color: #fff;
+  /* padding: 8px; */
+}
+/* .text:hover {
+  opacity: 1;
+} */
+.toy-con1 {
+  margin-left: 260px;
+}
+.toy-con2,
+.toy-con3,
+.toy-con4 {
+  margin-left: 20px;
+}
+.toy-contents > a:hover,
+.toy-contents2 > a:hover {
+  border: 1px solid #ccc;
+  box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.153);
+}
+.toy-con2 img {
+  width: inherit;
+  height: inherit;
+  object-fit: contain;
+  object-position: left -5px top 0;
+}
+.toy-con4 img {
+  width: inherit;
+  height: inherit;
+  object-fit: contain;
+  object-position: left -60px top 0;
+}
+.toy-con5 {
+  margin-left: 40px;
+  width: 300px;
+  height: 400px;
+  border: 1px solid #000;
+}
+.toy-con6 {
+  margin-left: 30px;
+  width: 300px;
+  height: 400px;
+  border: 1px solid #000;
+}
+.toy-con7 {
+  margin-left: 30px;
+  width: 300px;
+  height: 400px;
+  border: 1px solid #000;
+}
+.toy-modal-con {
+  cursor: pointer;
+}
+.toy-modal-open {
+  background-color: #000000ce;
+  position: fixed;
+  width: 70%;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+  z-index: 9999;
+}
+.close-modal {
+  font-size: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+.contents {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 /* ########## Section: Contact ########### */
