@@ -63,6 +63,7 @@ $(function () {
       speed: 100,
       autoStart: true,
       breakLines: false,
+      loop: true
     });
 
   /* Header Scroll Change */

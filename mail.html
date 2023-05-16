@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- /* Fontawesome */ -->
+  <!-- <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script> -->
+  <title>Document</title>
+  <style>
+    @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+    body {
+      background-color: rgb(237, 242, 245);
+    }
+    .container {
+      width: 90%;
+      margin: auto;
+    }
+    form {
+      margin: auto;
+      width: 500px;
+      height: 700px;
+      margin-top: 100px;
+      background-color: #fff;
+      border: 1px solid #eee;
+      text-align: center;
+      box-shadow: 0 3px 5px rgba(0, 0, 0.7, 0.059);
+    }
+    form label {
+      display: block;
+      text-align: left;
+      margin-left: 100px;
+      color: #214777;
+      font-weight: bold;
+    }
+    form h1 {
+      letter-spacing: 5px;
+      padding: 20px;
+      color: #214777;
+      font-weight: bold;
+      font-size: 40px;
+    }
+    form input, textarea {
+      border: transparent;
+      background-color: #f9f9f9;
+      width: 300px;
+      padding: 15px;
+      /* margin-top: 15px; */
+    }
+    form input {
+    }
+    input[type="submit"] {
+      background-color: #214777;
+      color: #fff;
+      cursor: pointer;
+      transition: .3s;
+    }
+    input[type="submit"]:hover {
+      background-color: skyblue;
+    }
+    input::placeholder, 
+    textarea::placeholder {
+      color: #bbb;
+      font-weight: normal;
+    }
+    input:focus,
+    textarea:focus {
+      box-shadow: 0 3px 5px rgba(0, 0, 0.7, 0.059);
+      outline: 1px solid #bbb;
+    }
+    label > i {
+      font-family: 'fontawesome';
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <form id="form">
+      <div class="form-inner">
+        <h1>Contact Me!</h1>
+        <label><i class="fa-solid fa-user"></i> Name</label><br>
+        <input type="text" name="to_name" id="to_name" placeholder="Please input your company name"/><br><br>
+        <label><i class="fa-solid fa-share"></i> From</label><br>
+        <input type="email" name="user_email" id="user_email" placeholder="Please input your Email"/><br><br>
+        <label><i class="fa-solid fa-reply"></i> To</label><br>
+        <input type="text" name="from_name" id="from_name" value="didrh31@naver.com"/><br><br>
+        <label><i class="fa-sharp fa-solid fa-envelope"></i> Message</label><br>
+        <textarea name="message" id="message" placeholder="Please input your message :)"></textarea><br><br>
+        <input type="submit" value="SEND" id="button" style="letter-spacing: 5px;"/>
+      </div>
+    </form>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      emailjs.init('TUhG2g5plhACcYszC')
+      const btn = document.getElementById('button');
+      document.getElementById('form').addEventListener('submit', function (event) {
+          event.preventDefault();
+          btn.value = 'Sending...';
+          const serviceID = 'service_wj94v6s';
+          const templateID = 'template_0c2gfju';
+          emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+              btn.value = 'Send Email';
+              alert('메일이 발송되었습니다!');
+            }, (err) => {
+              btn.value = 'Send Email';
+              alert(JSON.stringify(err));
+            });
+        });
+    </script>
+</div>
+</body>
+
+</html>

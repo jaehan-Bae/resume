@@ -295,25 +295,25 @@ nav a:hover {
   margin-left: 30px;
 }
 .about-introduce {
-  margin-top: 120px;
+  margin-top: 50px;
   color: #777;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .hash-desc {
   margin-top: 40px;
-  font-size: 20px;
+  font-size: 15px;
   display: block;
 }
 .hash {
   font-family: 'Josefin Sans', sans-serif;
   background-color: rgb(153, 218, 246);
   color: #fff;
-  padding: 15px;
+  padding: 16px;
   width: 20px;
   border-radius: 20px;
-  font-size: 30px;
+  font-size: 25px;
   margin-right: 20px;
   transition: .3s;
   cursor: pointer;
