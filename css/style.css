@@ -323,11 +323,11 @@ nav a:hover {
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.273);
 }
 
-/* section.welcome {display: none;}
+ /* section.welcome {display: none;}
 section.about {display: none;}
-section.skill {display: none;}
-section.portfolio {display: none;} */
-/* section.toy {display: none;} */
+section.skill {display: none;} */
+/* section.portfolio {display: none;} 
+section.toy {display: none;} */
 /* section.contact {display: none;} */
 
 /* ########## Section: Skill ########### */
@@ -384,6 +384,7 @@ section.portfolio {display: none;} */
 /* ########## Section: Portfolio ########### */
 .portfolio {
   border: 1px solid #eee;
+  position: relative;
 }
 .portfolio::before{
   content: '03';
@@ -406,11 +407,22 @@ section.portfolio {display: none;} */
 }
 .portfolio-contents {
   overflow: hidden;
+  display: none;
+}
+.portfolio-contents.active {
+  display: block;
 }
 .portfolio-list {
   /* text-align: center; */
+  position: absolute;
+  top: 32%;
+  left: 58%;
+  transform: translate(-50%,-50%);
+  width: 32%;
+  height: 50px;
   margin-bottom: 20px;
   font-weight: bold;
+  background-color: #eee;
 }
 .portfolio-list span:hover {
   background-color: rgba(158,213,246,0.5);
@@ -418,14 +430,21 @@ section.portfolio {display: none;} */
   border-radius: 5px;
   cursor: pointer;
 }
+.portfolio-item > span {
+  font-size: 20px;
+}
 .portfolio-item::after {
-  content: '|';
+  content: '　|　';
   padding: 15px;
   color: #999;
   height: 8px;
 }
 .portfolio-item:last-child:after {
   content: '';
+}
+.portfolio-item.active {
+  color: #214777;
+  font-weight: bold;
 }
 .portfolio-left {
   float: left;
@@ -435,7 +454,7 @@ section.portfolio {display: none;} */
 .portfolio-right {
   float: right;
   width: 70%;
-  margin-top: 180px;
+  margin-top: 330px;
 }
 .portfolio-right img {
   width: 80%;

@@ -201,7 +201,14 @@
     <section class="portfolio fullsection" id="feature4">
       <div class="portfolio-inner">
         <h3 class="title">PORTFOLIO</h3>
-        <div class="portfolio-contents">
+        <div class="portfolio-list">
+          <a class="portfolio-item active" data-alt="chuidasun"><span>취다선</span></a>
+          <a class="portfolio-item" data-alt="lostory"><span>로스토리</span></a>
+          <a class="portfolio-item" data-alt="inflearn"><span>인프런</span></a>
+          <a class="portfolio-item" data-alt="namyangmall"><span>남양몰</span></a>
+          <a class="portfolio-item" data-alt="team"><span>팀과제</span></a>
+        </div>
+        <div class="portfolio-contents active" id="chuidasun">
           <div class="portfolio-left">
             <div class="portfolio-title">
               <h2>취다선</h2>
@@ -216,11 +223,25 @@
           </div>
           <div class="portfolio-right">
             <div class="portfolio-mockup">
-              <div class="portfolio-list">
-                <a class="portfolio-item"><span>취다선</span></a>
-                <a class="portfolio-item"><span>로스토리</span></a>
-                <a class="portfolio-item"><span>포트폴리오3</span></a>
-              </div>
+              <img src="./images/monitor-mockup.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-contents" id="lostory">
+          <div class="portfolio-left">
+            <div class="portfolio-title">
+              <h2>로스토리</h2>
+              <p>작업기간 : 1주</p>
+              <p>작업인원 : 1인 (100%)</p>
+              <p>참고사항 : 메인페이지1</p>
+            </div>
+            <div class="portfolio-btns">
+              <a href="#" class="frs-btn" onclick="openWindow(event, 2000, 8700, './frs.html')">기능정의서</a>
+              <a href="https://jaehan-bae.github.io/chuidasun/" target="_blank">사이트 보기</a>
+            </div>
+          </div>
+          <div class="portfolio-right">
+            <div class="portfolio-mockup">
               <img src="./images/monitor-mockup.png" alt="">
             </div>
           </div>
@@ -236,9 +257,9 @@
           <a href="#" class="toy-con1" onclick="openWindow(event, 300, 300, './star-rating.html')">
             <div class="toy-img">
               <img src="./images/toy-section/jQuery-star.gif" alt="">
-                <div class="overlay">
-                  <div class="text">자바스크립트로 별점주기</div>
-                </div>
+              <div class="overlay">
+                <div class="text">자바스크립트로 별점주기</div>
+              </div>
             </div>
           </a>
           <a href="#" class="toy-con2" onclick="openWindow(event, 800, 800, './band-login.html')">
@@ -286,7 +307,8 @@
             </div>
             <div class="contact-btns">
               <a href="#">메일 보내기</a>
-              <a href="https://beom31.tistory.com/" target="_self">블로그 바로가기</a>
+              <a href="https://beom31.tistory.com/" target="_blank">블로그_1</a>
+              <a href="https://blog.naver.com/didrh31/222895826108" target="_blank">블로그_2</a>
             </div>
           </div>
         </div>
