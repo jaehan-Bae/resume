@@ -73,6 +73,11 @@ $(function () {
       $(".goto-top").stop().animate({ top: windowTop + "px" }, 500);
     }
   );
+
+  $('.toy-img').mouseover(function() {
+    $(this).parent().siblings().find('.toy-thum').removeClass('active');
+    $(this).children('.toy-thum').addClass('active');
+  });
 });
 
   // Window Open event 
