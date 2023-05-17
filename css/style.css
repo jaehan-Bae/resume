@@ -1,13 +1,11 @@
 /* Fontawesome 4.7 */
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
 /* XEION CDN */
 @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
-
+/* Web Fonts - Carter+One (Main eng)*/
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
-
+/* Web Fonts - Josefin+Sans (Sub eng)*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200;1,400&display=swap');
-
 /* Web Fonts - Abril+Fatface */
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 /* Web Fonts - NoonNoo */
@@ -50,7 +48,7 @@ body:not(.eng) {
   line-height: 1.7em;
   margin: 0;
   background-color: #fff;
-  color: #222;
+  color: #333;
 }
 body.active {
   overflow: hidden;
@@ -289,7 +287,7 @@ nav a:hover {
 }
 .about-th {
   font-weight: bold;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 .about-td {
   margin-left: 30px;
@@ -323,11 +321,12 @@ nav a:hover {
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.273);
 }
 
+/* 여기 주석 숨기기 */
  /* section.welcome {display: none;}
 section.about {display: none;}
-section.skill {display: none;} */
-/* section.portfolio {display: none;} 
-section.toy {display: none;} */
+section.skill {display: none;}  */
+/*section.portfolio {display: none;} */
+/* section.toy {display: none;}  */
 /* section.contact {display: none;} */
 
 /* ########## Section: Skill ########### */
@@ -355,28 +354,31 @@ section.toy {display: none;} */
 }
 .skill-head img {
   width: 60px;
+  /* height: 60px; */
 }
 .skill-contents {
   display: flex;
   justify-content: space-around;
   margin-left: 300px;
-  margin-top: 180px;
+  margin-top: 250px;
 }
-.skill-left > h1 {
-  font-weight: bold;
-}
+.skill-left > h1,
 .skill-right > h1 {
   font-weight: bold;
+  color: #214777;
+  font-size: 34px;
+  padding-bottom: 30px;
 }
+
 .skill-con {
   overflow: hidden;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .skill-con > div {
   float: left;
 }
 .skill-head {
-  margin-right: 25px;
+  margin-right: 30px;
 }
 .skill-bottom {
   width: 60%;
@@ -416,7 +418,7 @@ section.toy {display: none;} */
   /* text-align: center; */
   position: absolute;
   top: 28%;
-  left: 57%;
+  left: 60%;
   transform: translate(-50%,-50%);
   width: 33.3%;
   height: 50px;
@@ -456,28 +458,31 @@ section.toy {display: none;} */
 }
 .portfolio-left {
   float: left;
-  width: 20%;
+  width: 30%;
   margin-top: 400px;
+  background-color: #eee;
+  padding: 30px;
 }
 .portfolio-right {
   float: right;
-  width: 70%;
+  width: 60%;
   margin-top: 330px;
 }
 .portfolio-right img {
-  width: 80%;
+  width: 75%;
 }
 .portfolio-mockup {
   width: 900px;
   text-align: center;
 }
-.portfolio-title {}
 .portfolio-title > h2 {
   font-size: 35px;
   font-weight: bold;
   margin-bottom: 20px;
 }
-.portfolio-title p {
+.portfolio-title > h4 {
+  color: #214777;
+  margin-bottom: 10px;
 }
 .portfolio-btns {
   margin-top: 30px;
@@ -532,21 +537,6 @@ section.toy {display: none;} */
   transition: .5s;
   position: relative;
 }
-.text {
-  position: absolute;
-  /* opacity: 0; */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* width: inherit;
-  height: inherit; */
-  border: 1px solid #aaa;
-  color: #fff;
-  /* padding: 8px; */
-}
-/* .text:hover {
-  opacity: 1;
-} */
 .toy-con1 {
   margin-left: 260px;
 }
@@ -617,6 +607,32 @@ section.toy {display: none;} */
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+}
+.toy-img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.toy-thum {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: #214877d2;
+  display: none;
+}
+.toy-thum > div {
+  position: absolute;
+  color: #fff;
+  width: 90%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.toy-thum.active {
+  display: block;
 }
 
 /* ########## Section: Contact ########### */
