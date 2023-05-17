@@ -59,7 +59,7 @@ $(function () {
 
     /* TypeIt - Welcome */
     $('#typing').typeIt({
-      strings: ["Web publisher", "Front-end developers"],
+      strings: ["Web publisher", "Front-end developer"],
       speed: 100,
       autoStart: true,
       breakLines: false,
