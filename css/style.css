@@ -200,7 +200,6 @@ nav a:hover {
 
 /* ########## Section: About ########### */
 .about {
-  position: relative;
 }
 .about::before{
   content: '01';
@@ -215,7 +214,6 @@ nav a:hover {
 .about-inner {
   width: 1500px;
   margin: auto;
-  position: relative;
   z-index: 10;
 }
 .about-contents {
@@ -224,15 +222,17 @@ nav a:hover {
 .about-left {
   float: left;
   width: 45%;
+  position: relative;
 }
 .about-left,
 .about-right {
   margin-top: 300px;
 }
-.about-left h3 {
+.about-inner h3 {
   position: absolute;
-  left: -100px;
-  top: 33%;
+  top: 28%;
+  left: 200px;
+  z-index: 10;
 }
 .about-right {
   float: right;
@@ -309,7 +309,7 @@ nav a:hover {
 }
 
 /* 여기 주석 숨기기 */
- /* section.welcome {display: none;} */
+ section.welcome {display: none;}
 /* section.about {display: none;} */
 /* section.skill {display: none;}  */
 /* section.portfolio {display: none;} */
