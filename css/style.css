@@ -14,9 +14,7 @@
   src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
-  /* unicode-range: U+AC00-D7A3; */
 }
-
 
 /* ======= Reset.css ======= */
 * {
@@ -54,8 +52,6 @@ body.active {
   overflow: hidden;
 }
 .eng {
-  /* font-family: 'Abril Fatface', cursive; */
-  /* font-weight: 400; */
   font-family: 'Carter One', cursive;
 }
 
@@ -74,7 +70,6 @@ body.active {
 }
 
 /* ======= Style.css ======= */
-.container {}
 header {
   position: fixed;
   background-color: transparent;
@@ -102,10 +97,6 @@ header.active {
   font-size: 22px;
   letter-spacing: 4px;
 }
-/* .logo img {
-  width: 160px;
-  height: 30px;
-} */
 .header-inner h3 {
   font-size: 15px;
 }
@@ -121,6 +112,7 @@ nav a:hover {
   color: #214777;
   font-weight: bold;
 }
+
 /* ########## Section: welcome ########### */
 .welcome-img {
   width: 100%;
@@ -194,10 +186,6 @@ nav a:hover {
   margin-left: 45%;
   animation: wheele 1.5s linear infinite;
 }
-/* .welcome-scroll:after {
-  content: "\e941";
-  display: block;
-} */
 @keyframes wheele {
   0% {
     top: 10px;
@@ -224,7 +212,6 @@ nav a:hover {
   color: #EEEEEE;
   line-height: 0 !important;
 }
-
 .about-inner {
   width: 1500px;
   margin: auto;
@@ -354,7 +341,6 @@ nav a:hover {
 }
 .skill-head img {
   width: 60px;
-  /* height: 60px; */
 }
 .skill-contents {
   display: flex;
@@ -415,7 +401,6 @@ nav a:hover {
   display: block;
 }
 .portfolio-list {
-  /* text-align: center; */
   position: absolute;
   top: 30%;
   left: 60%;
@@ -674,22 +659,14 @@ nav a:hover {
   height: inherit;
   z-index: 10;
 }
-.contact-inner h3 {
-  position: absolute;
-  top: 260px;
-}
 .contact-contents > div {
   margin-top: 360px;
   float: left;
   width: 50%;
 }
-.contact-img {
-}
 .contact-desc {
   width: 500px;
   text-align: center;
-}
-.contact-title {
 }
 .contact-title img {
   width: 50px;
@@ -759,7 +736,7 @@ footer {
   background-color: red;
   font-size: 24px;
   cursor: pointer;
-} */
+} 
 .quick {
   position:fixed;
   right:20px;
@@ -795,10 +772,6 @@ footer {
   padding-top: 15px;
   box-sizing: border-box;
   z-index: 9999;
-}
-.band-section {
-  /* height: calc(100vh - 60px); */
-  /* position: relative; */
 }
 .band-login {
   width: 360px;
