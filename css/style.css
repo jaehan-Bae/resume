@@ -403,13 +403,12 @@ nav a:hover {
 .portfolio-list {
   position: absolute;
   top: 30%;
-  left: 60%;
+  left: 58%;
   transform: translate(-50%,-50%);
   width: 33.3%;
   height: 50px;
   font-weight: bold;
   overflow: hidden;
-  /* background-color: #f9f9f9; */
   text-align: center;
   display: flex;
   align-items: center;
