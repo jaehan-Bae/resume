@@ -714,12 +714,12 @@ footer {
   top: 300px;
   z-index: 9999;
   width: 120px;
-  height: 200px;
+  height: 230px;
   border-radius: 5px;
   background-color: #214777;
 }
 .goto-top-inner {
-  padding: 22px 25px;
+  padding: 22px 16px;
 }
 .goto-top-inner a {
   color: #fff;
