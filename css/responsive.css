@@ -1,0 +1,86 @@
+@media (max-width:1300px) {
+  nav {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .gnb {
+    display: flex;
+  }
+
+  .about-inner {
+    width: 100%;
+  }
+
+  .about::before,
+  .skill::before,
+  .portfolio::before,
+  .toy::before,
+  .contact::before {
+    display: none;
+  }
+
+  .title {
+    font-size: 3vw;
+    display: block;
+  }
+
+  .about-headline h1 {
+    font-size: 7vw;
+  }
+
+  .about-right {
+    padding: 20px;
+  }
+  .about-inner h3,
+  .skill-inner h3,
+  .portfolio-inner h3,
+  .toy-inner h3,
+  .contact-inner h3 {
+    top: 13%;
+  }
+  .about-th {
+    margin-left: 10px;
+  }
+  .about-th li,
+  .about-td li {
+    font-size: 1.38vw;
+  }
+  .about-left,
+  .about-right {
+    margin-top: 220px;
+  }
+  .toy-inner h3 {
+    top: 50px;
+  }
+  .about-inner,
+  .skill-inner,
+  .portfolio-inner,
+  .toy-inner,
+  .contact-inner {
+    width: 100%;
+  }
+  .skill-contents {
+    margin-top: 200px;
+    margin-left: 100px;
+  }
+  .portfolio-left {
+    margin-top: 330px;
+  }
+  .toy-contents {
+    padding-top: 60px;
+  }
+  .toy-con1 {
+    margin-left: 150px;
+  }
+  .contact-img img {
+    width: 100%;
+  }
+  .contact-contents > div {
+    margin-top: 300px;
+  }
+  }

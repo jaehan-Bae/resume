@@ -309,11 +309,11 @@ nav a:hover {
 }
 
 /* 여기 주석 숨기기 */
- /* section.welcome {display: none;} */
-/* section.about {display: none;} */
-/* section.skill {display: none;}  */
-/* section.portfolio {display: none;} */
-/* section.toy {display: none;}  */
+ section.welcome {display: none;}
+section.about {display: none;}
+section.skill {display: none;} 
+section.portfolio {display: none;}
+section.toy {display: none;} 
 /* section.contact {display: none;} */
 
 /* ########## Section: Skill ########### */
@@ -648,9 +648,6 @@ nav a:hover {
 .contact-inner h3 {
   position: absolute;
   top: 28%;
-}
-.contact-img {
-  margin-top: 400px;
 }
 .contact-inner {
   width: 1500px;
