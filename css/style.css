@@ -403,7 +403,7 @@ nav a:hover {
 .portfolio-list {
   position: absolute;
   top: 30%;
-  left: 58%;
+  left: 60%;
   transform: translate(-50%,-50%);
   width: 33.3%;
   height: 50px;
@@ -674,8 +674,13 @@ nav a:hover {
 .contact-title > h2 {
   margin-top: 20px;
 }
-.contact-title span {
+.contact-title > a {
   font-size: 20px;
+  color: #214777;
+  text-decoration: underline;
+}
+.contact-title > a:hover {
+  font-weight: bold;
 }
 .contact-btns, .portfolio-btns {
   margin-top: 40px;
