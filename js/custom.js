@@ -36,13 +36,13 @@ $(function () {
 
     // });
 
-    // $('.portfolio-item').click(function() {
-    //   $(this).addClass('active');
-    //   $(this).siblings().removeClass('active');
+    $('.portfolio-item').click(function() {
+      $(this).addClass('active');
+      $(this).siblings().removeClass('active');
 
-    //   $('.portfolio-contents').removeClass('active');
-    //   $('#' + $(this).attr('data-alt')).addClass('active');
-    // });
+      $('.portfolio-contents').removeClass('active');
+      $('#' + $(this).attr('data-alt')).addClass('active');
+    });
 
 
     /* TypeIt - Welcome */
