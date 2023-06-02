@@ -68,6 +68,15 @@ body.active {
   height:100vh;
   position:relative;
 }
+.about, 
+.skill, 
+.portfolio, 
+.toy, 
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* ======= Style.css ======= */
 header {
@@ -212,21 +221,18 @@ nav a:hover {
   line-height: 0 !important;
 }
 .about-inner {
-  width: 1500px;
+  width: 1400px;
   margin: auto;
   z-index: 10;
 }
 .about-contents {
-  overflow: hidden;
+  /* overflow: hidden; */
+  padding-top: 5%;
 }
 .about-left {
   float: left;
   width: 45%;
   position: relative;
-}
-.about-left,
-.about-right {
-  margin-top: 300px;
 }
 .about-inner h3 {
   position: absolute;
@@ -241,7 +247,7 @@ nav a:hover {
   line-height: 1.7em;
   background-color: rgb(230, 239, 243);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.117);
-  padding: 50px;
+  padding: 30px;
   margin-right: 150px;
 }
 .about-headline {
@@ -250,7 +256,7 @@ nav a:hover {
   margin-top: 40px;
 }
 .about-headline h1 {
-  padding-top: 20px;
+  padding-top: 60px;
   color: #214777;
   font-size: 100px;
   font-weight: bold;
@@ -262,8 +268,8 @@ nav a:hover {
 .about-img {
   width: 300px;
   position: absolute;
+  top: -55px;
   left: 250px;
-  margin-top: -60px;
 }
 .about-img img {
   width: inherit;
@@ -274,20 +280,21 @@ nav a:hover {
 }
 .about-th {
   font-weight: bold;
-  margin-left: 20px;
+  width: 15%;
 }
 .about-td {
   margin-left: 30px;
 }
 .about-introduce {
-  margin-top: 50px;
+  padding-top: 50px;
   color: #777;
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
 .hash-desc {
-  margin-top: 40px;
+  /* margin-top: 40px; */
+  margin-top: 7%;
   font-size: 15px;
   display: block;
 }
@@ -331,22 +338,20 @@ nav a:hover {
   line-height: 0 !important;
 }
 .skill-inner {
-  width: 1500px;
+  width: 1400px;
   margin: auto;
   z-index: 10px;
 }
 .skill-inner h3 {
   position: absolute;
-  top: 28%;
 }
 .skill-head img {
   width: 60px;
 }
 .skill-contents {
   display: flex;
-  justify-content: space-around;
-  margin-left: 300px;
-  margin-top: 250px;
+  /* justify-content: space-around; */
+  margin-left:150px;
 }
 .skill-left > h1,
 .skill-right > h1 {
@@ -385,7 +390,7 @@ nav a:hover {
   line-height: 0 !important;
 }
 .portfolio-inner {
-  width: 1500px;
+  width: 1400px;
   margin: auto;
   height: inherit;
 }
@@ -402,8 +407,8 @@ nav a:hover {
 }
 .portfolio-list {
   position: absolute;
-  top: 30%;
-  left: 60%;
+  top: 26%;
+  left: 50%;
   transform: translate(-50%,-50%);
   width: 33.3%;
   height: 50px;
@@ -442,17 +447,19 @@ nav a:hover {
 .portfolio-left {
   float: left;
   width: 30%;
-  margin-top: 400px;
+  margin-top: 300px;
   background-color: #f9f9f9;
   padding: 30px;
+  margin-left: 100px;
+  margin-right: 50px;
 }
 .portfolio-right {
   float: right;
-  width: 60%;
-  margin-top: 330px;
+  width: 55%;
+  margin-top: 290px;
 }
 .portfolio-right img {
-  width: 75%;
+  width: 70%;
 }
 .portfolio-mockup {
   width: 900px;
@@ -496,7 +503,7 @@ nav a:hover {
   line-height: 0 !important;
 }
 .toy-inner {
-  width: 1500px;
+  width: 1400px;
   margin: auto;
   height: inherit;
   z-index: 10;
@@ -506,7 +513,7 @@ nav a:hover {
   top: 28%;
 }
 .toy-contents {
-  padding-top: 100px;
+  padding-top: 70px;
 }
 .toy-contents,
 .toy-contents2 {
@@ -528,10 +535,10 @@ nav a:hover {
 .toy-contents2 > a {
   margin-top: -50px;
   width: 500px;
-  height: 350px;
+  height: 250px;
 }
 .toy-con1 {
-  margin-left: 400px;
+  margin-left: 200px;
 }
 .toy-con2,
 .toy-con3,
@@ -650,15 +657,18 @@ nav a:hover {
   top: 28%;
 }
 .contact-inner {
-  width: 1500px;
+  width: 1300px;
   margin: auto;
   height: inherit;
   z-index: 10;
 }
 .contact-contents > div {
-  margin-top: 360px;
+  margin-top: 300px;
   float: left;
   width: 50%;
+}
+.contact-img img {
+  width: 100%;
 }
 .contact-desc {
   width: 500px;
