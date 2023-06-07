@@ -57,7 +57,7 @@ body.active {
 
 /* Common Css */
 .title {
-  font-size: 40px;
+  font-size: 1.5vw;
   font-weight: bold;
   color: #444;
   left: 240px;
@@ -456,7 +456,7 @@ nav a:hover {
 .portfolio-right {
   float: right;
   width: 55%;
-  margin-top: 290px;
+  margin-top: 310px;
 }
 .portfolio-right img {
   width: 70%;
