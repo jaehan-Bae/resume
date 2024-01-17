@@ -47,7 +47,7 @@ $(function () {
 
     /* TypeIt - Welcome */
     $('#typing').typeIt({
-      strings: ["Web publisher", "Front-end developer"],
+      strings: ["Web-Publisher", "Web-Designer"],
       speed: 100,
       autoStart: true,
       breakLines: false,
