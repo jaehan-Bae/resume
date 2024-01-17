@@ -50,6 +50,7 @@ body:not(.eng) {
 }
 body.active {
   overflow: hidden;
+  overflow-x: hidden;
 }
 .eng {
   font-family: 'Carter One', cursive;
