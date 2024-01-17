@@ -48,9 +48,11 @@ body:not(.eng) {
   background-color: #fff;
   color: #333;
 }
+body {
+  overflow-x: hidden;
+}
 body.active {
   overflow: hidden;
-  overflow-x: hidden;
 }
 .eng {
   font-family: 'Carter One', cursive;
