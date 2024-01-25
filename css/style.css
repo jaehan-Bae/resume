@@ -320,9 +320,9 @@ nav a:hover {
 }
 
 /* 여기 주석 숨기기 */
- section.welcome {display: none;}
-section.about {display: none;}
-section.skill {display: none;} 
+ /* section.welcome {display: none;} */
+/* section.about {display: none;} */
+/* section.skill {display: none;}  */
 /* section.portfolio {display: none;} */
 /* section.toy {display: none;}  */
 /* section.contact {display: none;} */
